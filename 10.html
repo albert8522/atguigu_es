@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+    <style>
+        #ad{
+            width:200px;
+            height:200px;
+            background:#58a;
+        }
+    </style>
+</head>
+<body>
+     <div id="ad"></div>
+    <script>
+        let ad= document.getElementById("ad");
+
+        ad.addEventListener("click",function(){
+
+            // let _this= this;
+            // setTimeout(function(){
+
+            //     console.log(this);
+            //     _this.style.background='pink';
+
+            // },2000);
+
+          setTimeout(()=>{
+
+            this.style.background='pink';
+          },2000);
+        });
+
+        const arr =[1,6,9,10,100,25];
+
+        // const result =arr.filter(function(item){
+        //     if(item %2 ===0){
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // });
+
+        //方法2 箭头函数
+        // const result = arr.filter( item=>{
+
+        //     if(item %2 ===0){
+        //         return true;
+        //     } else{
+        //         return false;
+        //     }
+        // });
+
+        // 方法3 
+        const result = arr.filter(item => item %2 ===0);
+        console.log(result);
+    </script>
+</body>
+</html>
