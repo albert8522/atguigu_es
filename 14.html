@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14</title>
+</head>
+<body>
+
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+
+    <script>
+       const a=['a','a1','a2'];
+       
+       const b=['b','b1','b2'];
+
+    //    const c= a.concat(b);
+    const c= [...a, ...b];
+
+       console.log(c);
+
+       const e=['E','E1','E2'];
+
+       const f= [...e];
+
+       console.log(f);
+
+
+       const divs = document.querySelectorAll('div');
+        const divArr = [...divs];
+        console.log(divArr);
+    //    console.log(divs);
+    </script>
+    
+</body>
+</html>
